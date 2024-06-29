@@ -1,3 +1,11 @@
+:root {
+  --primary-color-1: red;
+  --primary-color-2: green;
+  --primary-color-3: rgb(0, 0, 255);
+  --primary-color-4: black;
+
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #ffffff;
@@ -9,7 +17,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #ffffff url("../img/background.jpg") top right no-repeat;
+  background: url("../img/background.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -144,7 +152,7 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  background:#ffffff;
+  background: #ffffff;
 }
 
 #header.header-top .social-links,
@@ -283,7 +291,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background:#ffffff;
+  background: #ffffff;
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
@@ -1005,7 +1013,7 @@ section .container {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color:#000000;
+  color: #000000;
   font-weight: 700;
   margin: 10px 0 8px 68px;
 }
@@ -1084,11 +1092,11 @@ section .container {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 10;
   box-shadow: none;
   font-size: 14px;
   background: rgba(255, 255, 255, 0.08);
-  border: 0;
+  border: 50;
   transition: 0.3s;
   color: #000000;
 }
@@ -1106,7 +1114,7 @@ section .container {
 
 .contact .php-email-form input::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--primary-color-4);
   opacity: 1;
 }
 
@@ -1160,7 +1168,7 @@ section .container {
   .credits {
     text-align: center;
     padding: 10px;
-    background:#ffffff;
+    background: #ffffff;
   }
 }
 
