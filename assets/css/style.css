@@ -1,15 +1,16 @@
 :root {
-  --primary-color-1: red;
-  --primary-color-2: green;
-  --primary-color-3: rgb(0, 0, 255);
-  --primary-color-4: black;
+  --primary-color-1: rgb(34, 40, 49);
+  --primary-color-2: rgb(57, 62, 70);
+  --primary-color-3: rgb(0, 173, 181);
+  --primary-color-4: rgb(238, 238, 238);
+  --text-color: black;
 
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: red;
+  color: var(--text-color);
   position: relative;
   background: transparent;
 }
@@ -33,7 +34,7 @@ body::before {
 }
 
 a {
-  color: #3815d2;
+  color: var(--primary-color-3);
   text-decoration: none;
 }
 
@@ -220,7 +221,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #000000;
+  color: var(--text-color);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -256,14 +257,14 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #000000;
+  color: var(--text-color);
 }
 
 /**
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #000000;
+  color: var(--text-color);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -383,7 +384,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: red;
   margin: 4px 10px;
 }
 
@@ -394,16 +395,16 @@ section .container {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #000000;
+  color: var(--text-color);
 }
 
 /*--------------------------------------------------------------
-# About
+# About 
 --------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #3815d2;
+  color: red;
 }
 
 .about-me .content ul {
@@ -1114,7 +1115,7 @@ section .container {
 
 .contact .php-email-form input::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: var(--primary-color-4);
+  color: var(--text-color);
   opacity: 1;
 }
 
@@ -1149,34 +1150,34 @@ section .container {
   }
 }
 
-/*--------------------------------------------------------------
-# Credits
---------------------------------------------------------------*/
-.credits {
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding: 15px;
-  text-align: right;
-  font-size: 13px;
-  color: #000000;
-  z-index: 999999;
-}
 
-@media (max-width: 992px) {
-  .credits {
-    text-align: center;
-    padding: 10px;
-    background: #ffffff;
+/* --------------- 
+    Icon Cloud 
+---------------*/
+@-webkit-keyframes grow {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 480px;
   }
 }
 
-.credits a {
-  color: #3815d2;
-  transition: 0.3s;
+#IconCloud {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  margin: -300px auto 0;
 }
 
-.credits a:hover {
-  color: #000000;
+#IconCloud a {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Microsoft YaHei;
+  color: var(--text-color);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 3px 6px;
 }
