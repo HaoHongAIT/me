@@ -76,11 +76,12 @@ h6 {
   line-height: 1;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
+  /* font-family: "Virgil"; */
 }
 
 #header h1 a,
 #header h1 a:hover {
-  color: #000000;
+  color: var(--primary-color-2);
   line-height: 1;
   display: inline-block;
 }
@@ -108,21 +109,21 @@ h6 {
 }
 
 #header .social-links a {
-  font-size: 16px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #ffffff1a;
-  color: #000000;
+  color: var(--primary-color-1);
   line-height: 1;
-  margin-right: 8px;
+  margin-right: 12px;
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
 
 #header .social-links a:hover {
-  background: #3815d2;
+  background: var(--primary-color-3);
 }
 
 @media (max-width: 992px) {
@@ -1033,16 +1034,16 @@ section .container {
 }
 
 .contact .info-box .social-links a {
-  font-size: 18px;
+  font-size: 25px;
   display: inline-block;
   color: #000000;
-  line-height: 1;
-  margin-right: 12px;
+  line-height: 2;
+  margin-right: 25px;
   transition: 0.3s;
 }
 
 .contact .info-box .social-links a:hover {
-  color: #3815d2;
+  color: var(--primary-color-3);
 }
 
 .contact .php-email-form {
@@ -1160,7 +1161,8 @@ section .container {
   }
 
   to {
-    width: 480px;
+    /* width: 480px; */
+    width: 280px;
   }
 }
 
@@ -1181,3 +1183,42 @@ section .container {
   text-decoration: none;
   padding: 3px 6px;
 }
+
+#IconCloud i {
+  font-size: 4rem;
+}
+
+/* 
+Button Download
+*/
+/* button {
+  font-family: 'Muli', sans-serif;
+  -webkit-transition: 0.15s all ease-in-out;
+  -o-transition: 0.15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
+  cursor: pointer;
+}
+
+
+.round-icon {
+  background: var(--primary-color-2);
+  border-radius: 30px;
+  border: none;  
+  color: #fff;
+  font-size: 16px;  
+  padding: 15px 30px;  
+  text-decoration: none;
+}
+
+.round-icon .vl {
+  width: 1px;
+  border-right: 1px solid #fff;
+  height: 16px;  
+  margin: 0 0 0 10px;
+}
+
+.round-icon i {
+  font-size: 16px;
+  padding-left: 200px;
+  vertical-align: baseline;
+} */

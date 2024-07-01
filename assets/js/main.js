@@ -254,7 +254,7 @@
 
 ////////////////////  ICON Cloud  ////////////////
 
-var radius = 100;
+var radius = 200;
 var dtr = Math.PI / 180;
 var d = 300;
 
